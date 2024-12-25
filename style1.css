@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f1e3; /* Light yellowish background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff8e1; /* Light cream background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5d4037; /* Dark brown for text */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: block;
+  color: #6d4c41; /* Medium brown for labels */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #8d6e63; /* Light brown border */
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #fbc02d; /* Bright yellow */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #f57f17; /* Darker yellow-orange on hover */
+}
+
+/* Form input focus effect */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #fbc02d; /* Highlight border with yellow on focus */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"] {
+    padding: 10px 15px;
+  }
+}
